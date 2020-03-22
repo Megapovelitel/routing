@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+  
+}
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Baloo+Chettan+2:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation');
+
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, red , rgb(22, 233, 233));
+ position: absolute;
+ 
+ justify-content: center;
+}
+
+
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5vh;
+  font-size: 35px;
+  background-color: rgb(238, 167, 14);
+  color: rgb(0, 0, 0);
+  
+  
+}
+nav, ul, li, a {
+  text-decoration: none;
+}
+
+.nav-links {
+  
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  z-index: 10;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  
+}
+
+
+  .link,
+    .current {
+        color: rgb(0, 0, 0);
+        position: relative;
+        font-weight: 700;
+        font-size: 23px;
+        z-index: 5;
+        font-family: 'Baloo Chettan 2', cursive;
+      
+    }
+    .link::before,
+    .current::before{
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color:rgba(74, 176, 207, 0.774);
+        width: 100%;
+        height: 2px;
+        transform-origin: center;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 800ms;
+    }
+    
+    .current::before{
+        transform: scaleX(1);
+    }
+
+    .link:hover::before{
+        transform: scaleX(1);
+    }
+
+
+.anime {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+}
+
+
+.styling {
+  font-size: 50px;
+  text-align: center;
+}
+
+.gradient {
+  background: linear-gradient(to bottom, rgba(14,193,238,0.9) -60%, #000000) 100%;
+  background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+.image-design {
+  width: 215px;
+  height:250px;
+  margin-Top:8px;
+  margin-Left:8px;
+  margin-Right:8px;
+  border: 2px solid black;
+}
+
+.image-new {
+   
+   
+    margin-Top:8px;
+    margin-Left:8px;
+    margin-Right:8px;
+    border: 4px solid black;
+  }
+  
+
+.logo{
+  font-family: 'Anton', sans-serif;
+  text-shadow: 2px 2px rgb(184, 102, 25);
+}
